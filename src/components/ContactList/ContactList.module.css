@@ -1,43 +1,27 @@
 .list {
-  padding: 0;
-  width: 600px;
-  margin: 0 auto;
+  padding: 20px;
+  margin: 0;
 }
-
-.item {
-  border: 1px solid #ddd;
-  margin-top: -1px; /* Prevent double borders */
-  background-color: #f6f6f6;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  color: black;
-  display: block;
+.listItem {
+  width: 300px;
+  display: flex;
+  align-items: center;
 }
-
-.item:hover {
-  background-color: #eee;
+.listItem:not(:last-child) {
+  margin-bottom: 10px;
 }
-
-.text {
-  display: inline-block;
+.name {
   margin-right: 20px;
 }
-
-.btn {
-  background-color: #ddd;
-  border: none;
-  color: black;
-  padding: 8px 22px;
-  text-align: center;
+.num {
+  font-weight: 500;
+  margin-right: auto;
+}
+.button {
+  background-color: rgb(255, 209, 197);
   border-radius: 5px;
-  font-size: 14px;
-  margin: 4px 2px;
-  transition: 0.3s;
   cursor: pointer;
 }
-
-.btn:hover {
-  background-color: #ec1616;
-  color: white;
+.button:hover {
+  transform: scale(1.05);
 }
